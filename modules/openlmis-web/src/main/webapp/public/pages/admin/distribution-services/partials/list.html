@@ -1,0 +1,40 @@
+<div>
+<title>List</title>
+    <h2> Distribution Services</h2>
+    <div class="row-fluid">
+        <div ng-form="distributionServices">
+                <div ng-show="showColor" style="color:red">{{message}}</div>
+            <div style="font-size:20px; color:green; font-weight:30px; padding-bottom:20px;">{{message1}}</div>
+            <table class="table table-bordered">
+                <tr>
+                    <td>Supplier Name</td>
+
+                    <td><input type="text" ng-model="distributionServices.supplier"/></td>
+                </tr>
+                    <td>Receiver Name</td>
+                    <td><input type="text" ng-model="distributionServices.receiver"/></td >
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td><input type="text" ng-model="distributionServices.status"/></td>
+                </tr>
+
+
+               <!-- <thead>
+                <th>supplier</th>
+                <th>receiver</th>
+                <th>status</th>
+                </thead>
+                <tbody>
+                <td><input type="text" ng-model="supplier"/></td>
+                <td><input type="text" ng-model="receiver"/></td>
+                <td><input type="text" ng-model="status"/></td>
+                </tbody>-->
+            </table>
+
+            <input type="button" class="pull-right" value="Send" ng-click="submit(distributionServices)"/>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
